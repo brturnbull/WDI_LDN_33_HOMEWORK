@@ -15,7 +15,7 @@ main {
 .top-nav ul li {
   display:inline-block;
   text-decoration: none;
-  padding:15px;
+  padding:10px;
 }
 
 .top-nav ul {
@@ -30,10 +30,6 @@ main {
   font:black;
 }
 
-.top-nav ul li a on:hover {
-  border-bottom: 1px orange solid;
-}
-
 #topnav-logo {
   margin: 0;
   padding: 1px;
@@ -41,7 +37,7 @@ main {
 }
 
 section h2 {
-  font-family:san-serif;
+  font-family:sans-serif;
   border-bottom: 1px solid lightgrey;
   margin-bottom:10px;
   font-size: 30px;
@@ -55,7 +51,6 @@ button {
   font-family: sans-serif;
   margin-left:500px;
   vertical-align: top;
-
   float:right;
 }
 
@@ -64,4 +59,22 @@ button {
   padding:10px;
   border:none;
   width:300px;
+}
+
+.section-1 img {
+  display:inline-block;
+  float:left;
+}
+
+.section-2 img {
+  display:inline-block;
+  float:right;
+}
+
+.right {
+  display:inline-block;
+  float:right;
+}
+
+footer {
 }
