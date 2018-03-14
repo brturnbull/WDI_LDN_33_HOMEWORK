@@ -8,7 +8,7 @@ header {
 }
 
 main {
-  width:800px;
+  width:900px;
   margin: 0 auto;
 }
 
@@ -20,7 +20,6 @@ main {
 
 .top-nav ul {
   padding-left:160px;
-  border-top:20px black solid;
   font-size:15px;
 }
 
@@ -44,7 +43,7 @@ section h2 {
   padding-left:20px;
   display:inline-block;
   padding-top:20px;
-  padding-left:0px;
+  padding-bottom:20px;
 }
 
 button {
@@ -61,19 +60,41 @@ button {
   width:300px;
 }
 
-.section-1 img {
+.section-1  {
   display:inline-block;
   float:left;
 }
 
-.section-2 img {
+.blue-nav{
+  float:left;
+  color: #39739d;
+  background-color: white;
+  border-color: transparent;
+}
+
+.blue-nav li{
   display:inline-block;
+  float:left;
+  font-size: 12px;
+  color: #39739d;
+  background-color: #E1ECF4;
+  border-color: transparent;
+  margin:20px;
+  padding:8px;
+}
+
+main p .box-2 {
+  float:right;
+  clear:both;
+}
+
+main .box-3 {
   float:right;
 }
 
-.right {
-  display:inline-block;
-  float:right;
+main img {
+  float:left;
+  height:250px;
 }
 
 footer {
