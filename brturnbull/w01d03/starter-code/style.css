@@ -1,0 +1,67 @@
+* {
+  font-family: sans-serif;
+  color:black;
+}
+
+header {
+  background:whitesmoke;
+}
+
+main {
+  width:800px;
+  margin: 0 auto;
+}
+
+.top-nav ul li {
+  display:inline-block;
+  text-decoration: none;
+  padding:15px;
+}
+
+.top-nav ul {
+  padding-left:160px;
+  border-top:20px black solid;
+  font-size:15px;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  font-family:sans-serif;
+  font:black;
+}
+
+.top-nav ul li a on:hover {
+  border-bottom: 1px orange solid;
+}
+
+#topnav-logo {
+  margin: 0;
+  padding: 1px;
+  height:20px;
+}
+
+section h2 {
+  font-family:san-serif;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom:10px;
+  font-size: 30px;
+  padding-left:20px;
+  display:inline-block;
+  padding-top:20px;
+  padding-left:0px;
+}
+
+button {
+  font-family: sans-serif;
+  margin-left:500px;
+  vertical-align: top;
+
+  float:right;
+}
+
+#search-here {
+  height:20px;
+  padding:10px;
+  border:none;
+  width:300px;
+}
