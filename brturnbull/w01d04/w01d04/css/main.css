@@ -5,6 +5,25 @@ light blue: #1c5380
 */
 
 body {
+  width:800px;
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  margin: 0 ;
+
+}
+
+.main-section {
+   width:960px;
+   margin: 0 auto;
+   display:flex;
+   justify-content: center;
+   flex-basis: 100%;
+   width:100%;
+ }
+
+.left {
+  width:30%;
+}
+
+.right {
+  width:60%;
 }
