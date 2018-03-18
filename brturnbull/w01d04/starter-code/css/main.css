@@ -79,7 +79,7 @@ h2 {
   padding-left: 15px;
 }
 
-button {
+/* button {
   display:flex;
   padding-right:30px;
   margin-top: 20px;
@@ -92,7 +92,7 @@ button {
   border: #06365f
   2px solid;
   font-size: 16px;
-}
+} */
 
 .left img {
   height:600px
