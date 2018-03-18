@@ -8,30 +8,36 @@
 
 /* add your sass here... */
 
-body {
-
-  // background-color:yellow;
-}
-
 main {
   margin:0 auto;
   width:90%;
+
+  p {
+    font-weight:bold;
+    font-size:13px;
+  }
 
 }
 
 header {
   background-color:#f4c842;
-  padding: 10px 40px;
-  border-top: solid 15px black;
+  padding: 0px 40px;
+  border-top: solid 17px black;
+  margin-bottom:15px;
   h1 {
     display:inline-block;
     color:black;
     font-size: 30px;
     font-weight:bold;
   }
+  h2 {
+    font-weight:bold;
+  }
   nav {
     text-decoration: none;
     border-top: 1px solid grey;
+    font-size:13px;
+    padding-top:0px;
     a {
       border-left: 1px solid grey;
       color:grey;
