@@ -16,6 +16,7 @@ body {
 main {
   margin:0 auto;
   width:90%;
+
 }
 
 header {
@@ -34,7 +35,21 @@ header {
     a {
       border-left: 1px solid grey;
       color:grey;
-      padding-left:10px;
+      padding:0px 10px;
+      &:first-child {border-left:0px}
+      // .active {
+      //   border-bottom: 3px solid black;
+      //   background-colo
+      // }
     }
+
+  }
+}
+
+
+
+.column {
+  .right {
+    padding-top:100px;
   }
 }

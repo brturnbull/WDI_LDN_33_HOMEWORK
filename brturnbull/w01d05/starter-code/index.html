@@ -8,57 +8,62 @@
   <body>
     <header>
       <h1>SPORT</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Football</a>
-        <a href="#">Formula 1</a>
-        <a href="#">Cricket</a>
-        <a href="#">Rugby U</a>
-        <a href="#">Rugby L</a>
-        <a href="#">Tennis</a>
-        <a href="#">Golf</a>
-        <a href="#">Athletics</a>
+      <nav class="navbar-menu">
+        <a class="navbar-item" href="#">Home</a>
+        <a class="navbar-item" href="#">Football</a>
+        <a class="navbar-item" href="#">Formula 1</a>
+        <a class="navbar-item" href="#">Cricket</a>
+        <a class="navbar-item" href="#">Rugby U</a>
+        <a class="navbar-item" href="#">Rugby L</a>
+        <a class="navbar-item" href="#">Tennis</a>
+        <a class="navbar-item" href="#">Golf</a>
+        <a class="navbar-item" href="#">Athletics</a>
       </nav>
+
+      <!-- <nav class="navbar">
+        <div class="navbar-menu">
+          <a class="navbar-item" href="#">Home</a>
+          <a class="navbar-item" href="#">Football</a>
+          <a class="navbar-item" href="#">Formula 1</a>
+          <a class="navbar-item" href="#">Cricket</a>
+          <a class="navbar-item" href="#">Rugby U</a>
+          <a class="navbar-item" href="#">Rugby L</a>
+          <a class="navbar-item" href="#">Tennis</a>
+          <a class="navbar-item" href="#">Golf</a>
+          <a class="navbar-item" href="#">Athleti</a>
+        </div>
+      </nav> -->
     </header>
   <main>
     <div class="columns">
-      <div class="column top">
-          <div class="column">
-            <img src="images/snooker.jpg" alt="">
-          </div>
-          <br>
-          <div class="columns">
-            <div class="column">
-              <img src="images/football1.jpg" alt="">
-              <p>Sanchez likely to Join Man Utd - Wenger</p>
-            </div>
-            <div class="column">
-              <img src="images/rugby.jpg" alt="">
-              <p>Mercer leads rookies in England squad</p>
-            </div>
-          </div>
+      <div class="column is-gapless is-half">
+        <img src="images/snooker.jpg" alt="">
       </div>
-      <div class="column bottom">
-        <div class="columns">
-          <div class="column">
-            <p>WATCH: Masters snooker allen cruises to 6-1 victory over O'Sullivan</p>
-          </div>
-          <div class="column">
-            <img src="images/tennis.jpg" alt="">
-            <p>Konta knocked out by world number </p>
-          </div>
-          <br>
-        </div>
-          <div class="columns">
-            <div class="column">
-              <img src="images/football2.jpg" alt="">
-              <p>VAR system is a shambles - Shearer</p>
-            </div>
-            <div class="column">
-              <img src="images/cricket.jpg" alt="">
-              <p>Stokes 'raring to go' for England as court date set</p>
-            </div>
-          </div>
+      <div class="column is-gapless is-one-quarter">
+        <h2>WATCH: Masters snooker allen cruises to 6-1 victory over O'Sullivan</h2>
+        <p>Watch live coverage of the 2018 Masters Snooker quarter-finals, as Ronnie O'Sullivan takes on Mark Allen.</p>
+      </div>
+      <div class="column is-gapless is-mobile">
+        <img src="images/tennis.jpg" alt="">
+        <p>Konta knocked out by world number 123 Pera</p>
+      </div>
+    </div>
+    <div class="columns is-mobile is-multiline">
+      <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+        <img src="images/football1.jpg" alt="">
+        <p>Sanchez likely to Join Man Utd - Wenger</p>
+      </div>
+      <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+        <img src="images/rugby.jpg" alt="">
+        <p>Mercer leads rookies in England squad</p>
+      </div>
+      <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+        <img src="images/football2.jpg" alt="">
+        <p>VAR system is a shambles - Shearer</p>
+      </div>
+      <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
+        <img src="images/cricket.jpg" alt="">
+        <p>Stokes 'raring to go' for England as court date set</p>
       </div>
     </div>
   </main>
