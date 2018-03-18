@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
 @import "bulma/sass/utilities/initial-variables";
 @import "bulma/sass/utilities/functions";
-
-/* add your customization here... */
-
 @import "bulma/bulma.scss";
 
-/* add your sass here... */
+* {box-sizing: border-box;}
 
 main {
   margin:0 auto;
   width:90%;
-
+  h2 {
+    font-weight:bold;
+    margin-bottom: 10px;
+  }
+  h3 {font-size: 12px;}
   p {
     font-weight:bold;
     font-size:13px;
   }
-
 }
 
 header {
   background-color:#f4c842;
   padding: 0px 40px;
-  border-top: solid 17px black;
+  border-top: solid 40px black;
   margin-bottom:15px;
   h1 {
     display:inline-block;
@@ -30,32 +30,28 @@ header {
     font-size: 30px;
     font-weight:bold;
   }
-  h2 {
-    font-weight:bold;
-  }
   nav {
     text-decoration: none;
     border-top: 1px solid grey;
     font-size:13px;
-    padding-top:0px;
+    padding:0px;
     a {
       border-left: 1px solid grey;
-      color:grey;
       padding:0px 10px;
+      background-color: inherit;
       &:first-child {border-left:0px}
-      // .active {
-      //   border-bottom: 3px solid black;
-      //   background-colo
-      // }
+      &:hover{
+        border-bottom:2px solid black;
+      }
     }
-
   }
 }
-
-
-
 .column {
-  .right {
-    padding-top:100px;
+    padding: 0.5rem 0.5rem;
   }
+.navbar-item, .navbar-link,  {
+    display: block;
+    line-height: 0.75;
+    padding: 0.5rem 0.5rem;
+    position: relative;
 }
