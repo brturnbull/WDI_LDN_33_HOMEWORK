@@ -1,6 +1,6 @@
-var userPrompt = prompt('Do you love maths?!');
+var userPrompt = prompt('Do you love maths?');
 
-  while (userPrompt === 'yes') {
+  if (userPrompt === 'yes') {
 
 
     var num1 = parseFloat(prompt('Enter a number'));
@@ -20,4 +20,4 @@ var userPrompt = prompt('Do you love maths?!');
     } else {
       alert('Please submit a valid equation.');
     }
-  } prompt;
+  }
