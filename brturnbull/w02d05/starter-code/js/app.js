@@ -12,50 +12,52 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var player2result = Math.random();
   if (player2 < 0.34) {
-    player2result = "Rock";
+    player2result = 'rock';
   } else if(player2result <= 0.67) {
-    player2result = "Paper";
+    player2result = 'paper';
   } else {
-    player2result = "Scissors";
+    player2result = 'scissors';
   }
 
   var compare = function(player1result,player2result) {
-    if (player1result === 'rock') {
+    if (player2result === player1result) {winner.innerHTML ='The result is a tie!';}
+    else if (player1result === 'rock') {
       if (player2result === 'scissors') {
         winner.innerHTML = 'Player 1 wins!';
       } else {
         winner.innerHTML = 'Player 2 wins!';
-      }}
+      }
+    }
     else if (player1result === 'paper') {
       if (player2result === 'scissors') {
-        winner.innerHTML = 'Player 2 wns!';
+        winner.innerHTML = 'Player 2 wins!';
       } else {
         winner.innerHTML = 'Player 1 wins!';
-      }}
+      }
+    }
     else if (player1result === 'scissors') {
         if (player2result === 'rock') {
         winner.innerHTML = 'Player 2 wins!';
       } else {
         winner.innerHTML = 'Player 1 wins!';
       }
-    } else if (player1result === player2result) {
-      winner.innerHTML ='the result is a tie!';
-      }};
+    }
+    }
 
   rock.addEventListener('click', function(e) {
-    player1.innerHTML = 'Rock';
+    player1.innerHTML = 'rock';
     player2.innerHTML = player2result;
     player1result = 'rock'
     compare(player1result,player2result);
   });
   paper.addEventListener('click', function(e) {
-    player1.innerHTML = 'Paper';
+    player1.innerHTML = 'paper';
     player2.innerHTML = player2result;
     player1result = 'paper';
     compare(player1result,player2result);
   });
   scissors.addEventListener('click', function(e) {
-    player1.innerHTML = 'Scissors';
+    player1.innerHTML = 'scissors';
     player2.innerHTML = player2result;
     player1result = 'scissors';
     compare(player1result,player2result);
