@@ -1,0 +1,19 @@
+{
+  "name": "w05d01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-ejs-layouts": "^2.4.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "will",
+  "license": "ISC"
+}

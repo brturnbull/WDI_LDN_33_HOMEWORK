@@ -1,0 +1,40 @@
+h1{
+  font-size: 40px;
+}
+
+body p {
+  width:80%;
+  margin:0 auto;
+}
+
+nav a {
+  text-decoration: none;
+  color:grey;
+  padding-left: 20px;
+}
+
+.login {
+  float:right;
+  padding-right:20px;
+}
+
+nav {
+  background-color: lightGrey;
+  height:70px;
+  line-height: 70px;
+  font-size: 30px;
+  width:100%;
+}
+
+form {
+  display:block;
+}
+.navbar {
+  height: 70px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
