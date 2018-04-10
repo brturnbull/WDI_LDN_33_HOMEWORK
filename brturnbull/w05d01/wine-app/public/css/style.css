@@ -1,5 +1,16 @@
-h1{
+/* font-family: 'Hi Melody', cursive;
+font-family: 'Slabo 27px', serif; */
+
+h1 {
   font-size: 40px;
+}
+
+html
+
+form {
+  width:80%;
+  margin:0 auto;
+  align-content: justified;
 }
 
 body p {
@@ -9,21 +20,37 @@ body p {
 
 nav a {
   text-decoration: none;
-  color:grey;
-  padding-left: 20px;
+  color:white;
+  width:25%;
+  text-align:center;
+  font-family: 'Slabo 27px', serif;
 }
-
-.login {
-  float:right;
-  padding-right:20px;
+nav a:hover {
+  text-decoration: underline;
+  color:white;
+  width:25%;
+  text-align:center;
+  font-family: 'Slabo 27px', serif;
 }
 
 nav {
-  background-color: lightGrey;
-  height:70px;
-  line-height: 70px;
-  font-size: 30px;
+  background-color: goldenRod;
+  height:50px;
+  line-height: 50px;
+  font-size: 20px;
   width:100%;
+  align-items: center;
+  display:flex;
+  justify-content: center;
+}
+
+.about-wrapper {
+  width:60%;
+  margin:0 auto;
+  padding-top:50px;
+}
+.about-wrapper img{
+align-items: justify-content;
 }
 
 form {
@@ -37,4 +64,5 @@ footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    font-size:
 }
