@@ -1,0 +1,44 @@
+body {
+  font-family:'Armata', sans-serif;
+}
+
+p {
+  width:60%;
+  margin: 0 auto;
+  margin-top:40px;
+}
+
+.hero {
+  background-image: url(http://www.markgray.com.au/images/gallery/large/desert-light.jpg);
+  background-size:cover;
+}
+
+.animalInfo {
+  align-items: baseline;
+}
+
+.animalsContent {
+  display:flex;
+  margin: 0 auto;
+  width:80%;
+  margin-top:70px;
+  width:60%
+}
+
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+  padding:30px;
+  margin: 0 auto;
+  width:80%;
+    &.title {
+      color:whitesmoke;
+      font-size:80px;
+      margin-top:20px;
+      margin-bottom:40px;
+    }
+}
+
+a.navbar-item {
+  color:whitesmoke;
+  font-family:'Armata', sans-serif;
+}

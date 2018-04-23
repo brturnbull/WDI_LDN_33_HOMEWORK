@@ -1,0 +1,23 @@
+<div class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Index
+      </h1>
+    </div>
+  </div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet,  qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="columns animalsContent" ng-repeat="thing in thingsIndex.all">
+  <div class="column">
+      <img src="{{ thing.image }}" alt="">
+  </div>
+  <div class="column animalInfo is-one-third">
+    <h2><strong>Name: </strong>{{ thing.name }}</h2>
+    <h3><strong>Danger Rating: </strong>{{ thing.dangerRating }}</h3>
+    <h4><i><strong>Scientific Name: </strong>{{ thing.scientificName }}</i></h4>
+    <hr>
+  </div>
+</div>
