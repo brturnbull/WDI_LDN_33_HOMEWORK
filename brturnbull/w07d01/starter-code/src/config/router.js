@@ -11,10 +11,14 @@ function Router($stateProvider,$urlRouterProvider) {
       templateUrl: 'views/things/index.html',
       controller: 'ThingsIndexCtrl as thingsIndex'
     })
-    .state('aboutIndex', {
+    .state('thingsAbout', {
       url: '/about',
       templateUrl: 'views/things/about.html',
-      controller: 'AboutIndexCtrl as aboutIndex'
+      controller: 'ThingsAboutCtrl as thingsAbout'
+    })
+    .state('thingsNew', {
+      url: '/new',
+      templateUrl: 'views/things/new.html'
     });
   $urlRouterProvider.otherwise('/');
 }
