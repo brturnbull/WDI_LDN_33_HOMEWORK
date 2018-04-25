@@ -11,7 +11,16 @@ import '@uirouter/angularjs';
 import Router from './config/router';
 
 import ThingsIndexCtrl from './controllers/things/index';
+import ThingsNewCtrl from './controllers/things/new';
+import ThingsShowCtrl from './controllers/things/show';
+import ThingsEditCtrl from './controllers/things/edit';
+
+import Thing from './models/thing';
 
 angular.module('things', ['ui.router'])
   .config(Router)
-  .controller('ThingsIndexCtrl', ThingsIndexCtrl);
+  .controller('ThingsNewCtrl', ThingsNewCtrl)
+  .controller('ThingsIndexCtrl', ThingsIndexCtrl)
+  .controller('ThingsShowCtrl', ThingsShowCtrl)
+  .controller('ThingsEditCtrl', ThingsEditCtrl)
+  .service('Thing', Thing);

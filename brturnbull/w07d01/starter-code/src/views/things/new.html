@@ -1,21 +1,19 @@
-
-
-<form ng-submit="">
+<form ng-submit="thingsNew.handleCreate()">
   <div class="field">
     <label for="name">Name</label>
-    <input class="input" placeholder="name" name="name" ng-model="" />
+    <input class="input" placeholder="name" name="name" ng-model="thingsNew.data.name" value="ekhfw" />
   </div>
   <div class="field">
     <label for="scientificName">Scientific Name</label>
-    <input class="input" placeholder="scientificName" name="scientificName" ng-model="" />
+    <input class="input" placeholder="scientificName" name="scientificName" ng-model="thingsNew.data.scientificName" />
   </div>
   <div class="field">
     <label for="vintage">Danger Rating</label>
-    <input class="input" placeholder="dangerRating" name="dangerRating" ng-model="" />
+    <input class="input" placeholder="dangerRating" name="dangerRating" ng-model="thingsNew.data.dangerRating" />
   </div>
   <div class="field">
     <label for="image">Image URL</label>
-    <input class="input" placeholder="image" name="image" ng-model="" />
+    <input class="input" placeholder="image" name="image" ng-model="thingsNew.data.image" />
   </div>
   <button class="button is-primary">Submit</button>
 </form>

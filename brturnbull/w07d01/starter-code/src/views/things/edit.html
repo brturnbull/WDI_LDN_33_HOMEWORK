@@ -1,0 +1,20 @@
+<form ng-submit="thingsEdit.handleUpdate()">
+
+  <div class="field">
+    <label for="name">Name</label>
+    <input class="input" value="thinsEdit.data.name" name="name" ng-model="thisEdit.data.name" />
+  </div>
+  <div class="field">
+    <label for="scientificName">Scientific Name</label>
+    <input class="input" value="thingsEdit.data.scientificName" name="scientificName" ng-model="thingsEdit.data.scientificName" />
+  </div>
+  <div class="field">
+    <label for="dangerRating">Danger Rating</label>
+    <input class="input" value="thingsEdit.data.dangerRating" name="dangerRating" ng-model="thingsEdit.data.dangerRating" />
+  </div>
+  <div class="field">
+    <label for="image">Image URL</label>
+    <input class="input" value="thingsEdit.data.image" name="image" ng-model="thingsEdit.data.image" />
+  </div>
+  <button class="button is-primary">Submit</button>
+</form>

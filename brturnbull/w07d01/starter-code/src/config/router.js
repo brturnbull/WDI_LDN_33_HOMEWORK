@@ -18,8 +18,20 @@ function Router($stateProvider,$urlRouterProvider) {
     })
     .state('thingsNew', {
       url: '/new',
-      templateUrl: 'views/things/new.html'
+      templateUrl: 'views/things/new.html',
+      controller: 'ThingsNewCtrl as thingsNew'
+    })
+    .state('thingsShow', {
+      url: '/things/:id',
+      templateUrl: 'views/things/show.html',
+      controller: 'ThingsShowCtrl as thingsShow'
+    })
+    .state('thingsEdit', {
+      url: '/things/:id/edit',
+      templateUrl: 'views/things/edit.html',
+      controller: 'ThingsEditCtrl as thingsEdit'
     });
+
   $urlRouterProvider.otherwise('/');
 }
 

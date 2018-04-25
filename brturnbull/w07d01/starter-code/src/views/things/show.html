@@ -1,0 +1,11 @@
+<div class="column">
+    <img src="{{ thingsShow.thing.image }}" alt="">
+</div>
+<div class="column animalInfo is-one-third">
+  <h2><strong>Name: </strong>{{ thingsShow.thing.name }}</h2>
+  <h3><strong>Danger Rating: </strong>{{ thingsShow.thing.dangerRating }}</h3>
+  <h4><i><strong>Scientific Name: </strong>{{ thingsShow.thing.scientificName }}</i></h4>
+  <hr>
+  <a ui-sref="thingsEdit({id: thingsShow.thing._id})" class="button is-primary">Edit</a>
+  <button ng-click="thingsShow.handleDelete()">Delete</button>
+</div>
