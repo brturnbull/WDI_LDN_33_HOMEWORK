@@ -10,7 +10,7 @@ function ThingsNewCtrl(Thing, $state) {
   function handleCreate() {
     //'Thing' is in short for shooting a post request to the correct URL and pushing
     Thing.create(this.data)
-    // then change the state to winesIndex
+    // then change the state to the index
       .then(() => $state.go('thingsIndex'));
 
   }

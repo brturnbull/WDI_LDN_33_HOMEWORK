@@ -9,7 +9,9 @@
     <nav class="navbar is-black">
       <a class="navbar-item" ui-sref="home">Home</a>
       <a class="navbar-item" ui-sref="aboutIndex">About</a>
-      <a class="navbar-item" ui-sref="thingsIndex">Index</a>
+      <a class="navbar-item" ng-click="main.logout()" ng-if="main.isAuthenticated()">Logout</a>
+      <a class="navbar-item" ui-sref="register" ng-if="!main.isAuthenticated()">Register</a>
+      <a class="navbar-item" ui-sref="login" ng-if="!main.isAuthenticated()">Login</a>
     </nav>
     <ui-view></ui-view>
   </body>
