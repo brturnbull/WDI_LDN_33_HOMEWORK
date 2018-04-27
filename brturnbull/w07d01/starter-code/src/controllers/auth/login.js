@@ -6,7 +6,7 @@ function LoginCtrl($auth, $state) {
 
   function handleLogin() {
     $auth.login(this.data)
-      .then(() => $state.go('register'));
+      .then(() => $state.go('thingsIndex'));
   }
 
   this.handleLogin = handleLogin;

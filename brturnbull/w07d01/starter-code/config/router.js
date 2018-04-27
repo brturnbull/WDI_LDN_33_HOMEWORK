@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const things = require('../controllers/things');
-const auth = require('../controllers/things');
+const auth = require('../controllers/auth');
 const secureRoute = require('../lib/secureRoute');
 //
 
