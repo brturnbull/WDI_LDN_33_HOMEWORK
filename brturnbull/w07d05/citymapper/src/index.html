@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="cityMapper">
   <head>
     <meta charset="utf-8">
-    <title>City Mapper</title>
+    <title>CityMapper</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/style.scss">
   </head>
+
   <body>
-    
+    <div class="outer-div">
+      <h1>Tube Status</h1>
+      <section class="" ng-controller="MainCtrl as tubes">
+        <div ng-repeat="line in data" class="tubelines">
+          <p class="line"><strong>{{line.name}}</p></strong>
+          <p class="status">{{line.lineStatuses[0].statusSeverityDescription}}</p>
+          <hr>
+        </div>
+      </section>
+    </div>
+
   </body>
 </html>
