@@ -1,7 +1,7 @@
 import angular from 'angular';
 import MainCtrl from './controllers/main';
-import './scss/style.scss';
 import 'bulma';
+import './scss/style.scss';
 
 
 angular.module('cityMapper', [])
