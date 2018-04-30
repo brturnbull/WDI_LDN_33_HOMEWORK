@@ -1,20 +1,36 @@
-<form ng-submit="thingsEdit.handleUpdate()">
-
+<form name="thingsEdit.form" ng-submit="thingsEdit.handleUpdate()" novalidate>
+  <!-- <p>{{ thingsEdit.form | json }}</p> -->
   <div class="field">
     <label for="name">Name</label>
-    <input class="input" name="name" ng-model="thingsEdit.thing.name" />
+    <input class="input" name="name" ng-model="thingsEdit.thing.name" required ng-class="{'is-danger': thingsEdit.isDanger('name') }" />
   </div>
+  <div ng-if="thingsEdit.form.name.$touched">
+    <small ng-if="thingsEdit.form.name.$error.required">This field is required</small>
+  </div>
+
   <div class="field">
     <label for="scientificName">Scientific Name</label>
-    <input class="input" value="thingsEdit.data.scientificName" name="scientificName" ng-model="thingsEdit.thing.scientificName" />
+    <input class="input" value="thingsEdit.data.scientificName" name="scientificName" ng-model="thingsEdit.thing.scientificName" required />
   </div>
+  <div ng-if="thingsEdit.form.scientificName.$touched">
+    <small ng-if="thingsEdit.form.scientificName.$error.required">This field is required</small>
+  </div>
+
   <div class="field">
     <label for="dangerRating">Danger Rating</label>
-    <input class="input" value="thingsEdit.data.dangerRating" name="dangerRating" ng-model="thingsEdit.thing.dangerRating" />
+    <input class="input" value="thingsEdit.data.dangerRating" name="dangerRating" ng-model="thingsEdit.thing.dangerRating" required />
   </div>
+  <div ng-if="thingsEdit.form.dangerRating.$touched">
+    <small ng-if="thingsEdit.form.dangerRating.$error.required">This field is required</small>
+  </div>
+
   <div class="field">
     <label for="image">Image URL</label>
-    <input class="input" value="thingsEdit.data.image" name="image" ng-model="thingsEdit.thing.image" />
+    <input class="input" value="thingsEdit.data.image" name="image" ng-model="thingsEdit.thing.image" required />
   </div>
+  <div ng-if="thingsEdit.form.image.$touched">
+    <small ng-if="thingsEdit.form.image.$error.required">This field is required</small>
+  </div>
+
   <button class="button is-primary">Submit</button>
 </form>

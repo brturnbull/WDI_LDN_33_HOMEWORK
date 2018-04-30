@@ -1,4 +1,5 @@
 import angular from 'angular';
+import 'angular-messages';
 
 //styles
 import 'bulma';

@@ -8,7 +8,8 @@ function ThingsNewCtrl(Thing, $state) {
 
 
   function handleCreate() {
-    //'Thing' is in short for shooting a post request to the correct URL and pushing
+    if(this.form.$invalid) return false;
+    
     Thing.create(this.data)
     // then change the state to the index
       .then(() => $state.go('thingsIndex'));

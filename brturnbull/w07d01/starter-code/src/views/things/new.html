@@ -1,19 +1,34 @@
-<form ng-submit="thingsNew.handleCreate()">
+<form name="thingsNew.form" ng-submit="thingsNew.handleCreate()" novalidate>
   <div class="field">
     <label for="name">Name</label>
-    <input class="input" placeholder="name" name="name" ng-model="thingsNew.data.name"  />
+    <input class="input" placeholder="name" name="name" ng-model="thingsNew.data.name" required />
   </div>
+  <div ng-if="thingsNew.form.name.$touched">
+    <small ng-if="thingsNew.form.name.$error.required">This field is required</small>
+  </div>
+
   <div class="field">
     <label for="scientificName">Scientific Name</label>
-    <input class="input" placeholder="scientificName" name="scientificName" ng-model="thingsNew.data.scientificName" />
+    <input class="input" placeholder="scientificName" name="scientificName" ng-model="thingsNew.data.scientificName" required ng-class="{'is-danger': thingsNew.isDanger('scientificName') }" />
   </div>
+  <div ng-if="thingsNew.form.scientificName.$touched">
+    <small ng-if="thingsNew.form.scientificName.$error.required">This field is required</small>
+  </div>
+
   <div class="field">
-    <label for="vintage">Danger Rating</label>
-    <input class="input" placeholder="dangerRating" name="dangerRating" ng-model="thingsNew.data.dangerRating" />
+    <label for="dangerRating">Danger Rating</label>
+    <input class="input" placeholder="dangerRating" name="dangerRating" ng-model="thingsNew.data.dangerRating" required ng-class="{'is-danger': thingsNew.isDanger('dangerRating') }" />
   </div>
+  <div ng-if="thingsNew.form.dangerRating.$touched">
+    <small ng-if="thingsNew.form.dangerRating.$error.required">This field is required</small>
+  </div>
+
   <div class="field">
     <label for="image">Image URL</label>
-    <input class="input" placeholder="image" name="image" ng-model="thingsNew.data.image" />
+    <input class="input" placeholder="image" name="image" ng-model="thingsNew.data.image" required ng-class="{'is-danger': thingsNew.isDanger('image') }" />
+  </div>
+  <div ng-if="thingsNew.form.image.$touched">
+    <small ng-if="thingsNew.form.image.$error.required">This field is required</small>
   </div>
   <button class="button is-primary">Submit</button>
 </form>
