@@ -1,4 +1,4 @@
-<div class="column">
+<div class="column is-centered">
     <img src="{{ thingsShow.thing.image }}" alt="">
 </div>
 <div class="column animalInfo is-one-third">
@@ -9,3 +9,24 @@
   <a ui-sref="thingsEdit({id: thingsShow.thing._id})" class="button is-primary">Edit</a>
   <button ng-click="thingsShow.handleDelete()">Delete</button>
 </div>
+
+
+    <div class="comments">
+      <div class="media" ng-repeat="comment in thingsShow.thing.comments">
+        <div class="media-content">
+          <p class="title is-4">{{ comment.content }}</p>
+          <p class="subtitle is-6">{{ comment.createdBy.username }}</p>
+          <p><small>{{ comment.createdAtRelative }}</small></p>
+          <button ng-click="thingsShow.handleCommentDelete(comment)" class="button is-danger">DELETE</button>
+        </div>
+      </div>
+  </div>
+
+    <form ng-submit="thingsShow.handleCommentCreate()">
+      <div class="field">
+        <label for="content">Comment</label>
+        <textarea class="textarea" ng-model="thingsShow.data.content" placeholder="Comment"></textarea>
+      </div>
+
+      <button class="button">Submit</button>
+    </form>

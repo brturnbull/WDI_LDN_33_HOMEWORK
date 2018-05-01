@@ -8,7 +8,6 @@ function thingsIndex(req, res, next) {
     .catch(next);
 }
 
-
 function thingsShow(req, res, next){
   Thing
     .findById(req.params.id)
@@ -41,10 +40,34 @@ function thingsDelete(req, res, next){
     .catch(next);
 }
 
+function thingsCommentCreate(req, res, next) {
+  req.body.createdBy = req.currentUser;
+  Thing.findById(req.params.id)
+    .then(thing => {
+      thing.comments.push(req.body);
+      return thing.save();
+    })
+    .then(thing => res.json(thing))
+    .catch(next);
+}
+
+function thingsCommentDelete(req, res, next) {
+  Thing.findById(req.params.id)
+    .then(thing => {
+      const comment = thing.comments.id(req.params.commentId);
+      comment.remove();
+      return thing.save();
+    })
+    .then(thing => res.json(thing))
+    .catch(next);
+}
+
 module.exports = {
   index: thingsIndex,
   show: thingsShow,
   create: thingsCreate,
   update: thingsUpdate,
-  delete: thingsDelete
+  delete: thingsDelete,
+  commentCreate: thingsCommentCreate,
+  commentDelete: thingsCommentDelete
 };

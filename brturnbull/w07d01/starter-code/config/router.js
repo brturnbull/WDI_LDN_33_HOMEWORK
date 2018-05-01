@@ -16,4 +16,10 @@ router.route('/things/:id')
 router.post('/register', auth.register);
 router.post('/login', auth.login);
 
+router.post('/things/:id/comments', things.commentCreate);
+router.delete('/things/:id/comments/:commentId', things.commentDelete);
+//things.commentCreate and things.commentDelete was exported from the controller 
+
+
+
 module.exports = router;
