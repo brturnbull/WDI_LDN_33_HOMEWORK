@@ -5,15 +5,31 @@
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Armata" rel="stylesheet">
     <title>Deadly Australians</title>
   </head>
-  <body>
-    <nav class="navbar is-black">
-      <a class="navbar-item" ui-sref="home">Home</a>
-      <a class="navbar-item">About</a>
-      <a class="navbar-item" ui-sref="new">Add a thing</a>
-      <a class="navbar-item" ng-click="main.logout()" ng-if="main.isAuthenticated()">Logout</a>
-      <a class="navbar-item" ui-sref="register" ng-if="!main.isAuthenticated()">Register</a>
-      <a class="navbar-item" ui-sref="login" ng-if="!main.isAuthenticated()">Login</a>
-    </nav>
-    <ui-view></ui-view>
-  </body>
+  <body ng-controller="MainCtrl as main">
+  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" ui-sref="home">
+        <img ng-src="https://www.unrealplates.com/cms_uploads/images/10055_55_23-10-2009_7660.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" ng-click="main.toggleNav()" ng-class="{ 'is-active': main.navBarIsOpen }">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" ng-class="{ 'is-active': main.navBarIsOpen }">
+      <div class="navbar-end">
+        <a class="navbar-item" ui-sref="home">Home</a>
+        <a class="navbar-item" ui-sref="thingsIndex">All of the things</a>
+        <a class="navbar-item" ui-sref="thingsNew">Add a thing</a>
+        <a class="navbar-item" ng-click="main.logout()" ng-if="main.isAuthenticated()">Logout</a>
+        <a class="navbar-item" ui-sref="register" ng-if="!main.isAuthenticated()">Register</a>
+        <a class="navbar-item" ui-sref="login" ng-if="!main.isAuthenticated()">Login</a>
+      </div>
+    </div>
+  </nav>
+    <div class="container" ui-view></div>
+  </section>
+</body>
 </html>

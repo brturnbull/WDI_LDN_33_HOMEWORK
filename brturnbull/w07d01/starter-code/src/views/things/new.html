@@ -1,4 +1,5 @@
 <form name="thingsNew.form" ng-submit="thingsNew.handleCreate()" novalidate>
+  <!-- <pre>{{thingsNew.form | json}}</pre> -->
   <div class="field">
     <label for="name">Name</label>
     <input class="input" placeholder="name" name="name" ng-model="thingsNew.data.name" required />
@@ -14,7 +15,6 @@
   <div ng-if="thingsNew.form.scientificName.$touched">
     <small ng-if="thingsNew.form.scientificName.$error.required">This field is required</small>
   </div>
-
   <div class="field">
     <label for="dangerRating">Danger Rating</label>
     <input class="input" placeholder="dangerRating" name="dangerRating" ng-model="thingsNew.data.dangerRating" required ng-class="{'is-danger': thingsNew.isDanger('dangerRating') }" />
