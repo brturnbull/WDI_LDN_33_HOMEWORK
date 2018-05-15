@@ -19,15 +19,12 @@ class App extends React.Component {
     this.setState({ val: e.target.value }, () => {
       if(this.state.val === computerChoice){
         this.setState({decision: 'We have a tie!'});
-        console.log('We have a tie!');
       } else if (this.state.val === 'rock' && computerChoice === 'scissors' ||
         this.state.val === 'paper' && computerChoice === 'rock' ||
         this.state.val === 'scissors' && computerChoice === 'paper') {
         this.setState({decision: 'You win!'});
-        console.log('You win!');
       } else {
         this.setState({decision: 'Oops, you lost!'});
-        console.log('Oops, you lost!');
       }
     });
   }
@@ -40,12 +37,10 @@ class App extends React.Component {
         <section className="section">
           <div className="container">
             <h1 className="title">Paper, Scissors, Rock.</h1>
-            <hr />
             <Choices
               choice ={this.choice}
               reset={this.reset}
             />
-
             <Decision
               decision ={this.state.decision}
             />
