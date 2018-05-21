@@ -1,0 +1,20 @@
+.card-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.hero-image {
+  @extend .card-image;
+  height: 600px;
+}
+
+html {
+  background-image: url(https://hype.my/wp-content/uploads/2016/08/people-hands-concert-music-crowd.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+}

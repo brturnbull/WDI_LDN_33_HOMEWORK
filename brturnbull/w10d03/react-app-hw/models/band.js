@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
 const bandSchema = new mongoose.Schema({
-  name: String,
+  name: { type: String, required: 'This field is required' },
   members: [],
+  image: String,
   location: {
     lat: Number,
     lng: Number
   },
-  genre: String,
-  image: String,
+  genre: { type: String, required: 'This field is required' },
   yearFormed: Number,
   yearBrokenUp: Number
 });
