@@ -24,13 +24,10 @@ class App extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const search = this.state.search;
-    this.setState({ search: search});
-    console.log(search);
-
+    
     axios
-      .get(`https://api.giphy.com/v1/gifs/search?q=${search}&api_key=iVsmQPxoGpmdXL52lT1dOO66lKfom1Wp&limit=5`)
-      .then(res => console.log(res.data));
+      .get(`https://api.giphy.com/v1/gifs/search?q=${this.state.search}&api_key=iVsmQPxoGpmdXL52lT1dOO66lKfom1Wp&limit=5`)
+      .then(res => this.setState({ gifs: res.data.data }));
   }
 
   render() {

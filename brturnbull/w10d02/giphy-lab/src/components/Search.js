@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchForm = ({ handleSubmit, newSearch, handleChange }) => {
+const SearchForm = ({ handleSubmit, handleChange }) => {
   return (
     <form
       onSubmit={handleSubmit}

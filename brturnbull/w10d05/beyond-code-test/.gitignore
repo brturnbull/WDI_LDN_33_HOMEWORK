@@ -1,0 +1,5 @@
+ASSETS
+VISUALS
+*.log
+*.sketch
+node_modules
